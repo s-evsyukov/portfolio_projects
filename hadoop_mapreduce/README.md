@@ -1,5 +1,5 @@
 # Hadoop_map_reduce
-map reduce practice
+
 
 ### Task: To write a mapreduce application using New York taxi data and calculating the average value of "tips" for each month of 2020:
 
