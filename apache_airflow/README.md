@@ -30,4 +30,4 @@
 4. *Initiating DAG* in Airflow
 
 
-[1]:https://github.com/Amboss/AirflowPractice/blob/master/scripts/export-dag.py
+[1]:https://github.com/Amboss/portfolio_projects/blob/master/apache_airflow/scripts/export-dag.py
