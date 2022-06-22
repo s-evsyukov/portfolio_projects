@@ -18,8 +18,8 @@ Learn more about the data source [*here*][1]
 3. [*Downloading data*][2] (database) to created `s3` bucket using `distcp`.
 4. [*Creating mapper*][3].
 5. [*Creating reducer*][4]. 
-6. [*Creating shell-script*][5] to initiate MapReduce task. Container configured for `map` operation with size 1024 MB, becose standart size is 3072 Mb and current file size is less than 1024 MB
-8. [*Uploading script*][6] to remoute server `make copy`.
+6. [*Creating shell-script*][5] to initiate MapReduce task. Container configured for `map` operation with size 1024 MB, because standard size is 3072 Mb and current file size is less than 1024 MB
+8. [*Uploading script*][6] to remote server `make copy`.
 9. *Initiating application*.
 
 [1]:https://registry.opendata.aws/nyc-tlc-trip-records-pds/
