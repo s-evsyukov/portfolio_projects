@@ -36,4 +36,4 @@ kubectl get service -n spark-history-server
 12. Initiating Spark app with History Server support
 
 
-[1]:https://github.com/Amboss/Google_Kubernetes/blob/master/scripts/work_progress.sh
+[1]:https://github.com/Amboss/portfolio_projects/blob/master/google_kubernetes/scripts/work_progress.sh
