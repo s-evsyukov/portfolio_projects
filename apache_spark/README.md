@@ -4,7 +4,7 @@
 `Yandex.Cloud` `S3` `HDFS` `PySpark` `CLI` `Shell` `Hadoop Cluster Administration`                                            
 
 ---
-#### Task: create a showcase of the following type:
+### Task: create a showcase of the following type:
 
 | Number of the week | Payment type | Average check | The ratio of tips to the cost of the trip |
 |:-------------------|:-------------|:--------------|:------------------------------------------|
@@ -20,10 +20,8 @@ erDiagram
     TRIP |o--|| PAYMENT: has
 ```
 
-###Input-data: taxi_data.csv:
-
+### Input-data: taxi_data.csv:
 1,2020-04-01 00:41:22,2020-04-01 01:01:53,1,1.20,1,N,41,24,2,5.5,0.5,0.5,0,0,0.3,6.8,0
-
 Learn more about the data source [*here*][1]
 
 ---
