@@ -14,9 +14,9 @@
 | [*Google Kubernetes*][6]      | Deploying a `Kubernetes` cluster with the installation of components to run the custom script and tracking the result using `Spring History Server`   | `VK.Cloud` `terminal` `Ubuntu` `Kubectl` `Kubernetes` `Helm` `DOCKER` `S3` `Spark` `Spark Operator`  `Spark History Server`   |
 
 
-[1]:https://github.com/Amboss/portfolio/Hadoop_mapreduce
-[2]:https://github.com/Amboss/portfolio/Hadoop_Hive
-[3]:https://github.com/Amboss/portfolio/Apache_Spark
-[4]:https://github.com/Amboss/portfolio/Docker_Kafka_Spark
-[5]:https://github.com/Amboss/portfolio/Apache_Airflow
-[6]:https://github.com/Amboss/portfolio/Google_Kubernetes
+[1]:https://github.com/Amboss/portfolio_projects/tree/master/hadoop_mapreduce
+[2]:https://github.com/Amboss/portfolio_projects/tree/master/hadoop_hive
+[3]:https://github.com/Amboss/portfolio_projects/tree/master/apache_spark
+[4]:https://github.com/Amboss/portfolio_projects/tree/master/docker_kafka_spark
+[5]:https://github.com/Amboss/portfolio_projects/tree/master/apache_airflow
+[6]:https://github.com/Amboss/portfolio_projects/tree/master/google_kubernetes
