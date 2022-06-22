@@ -5,14 +5,14 @@
 
 ---
 
-#### Task: To provide constant access to cold data, create a 'Star` scheme, create a showcase of the form:
+### Task: To provide constant access to cold data, create a 'Star` scheme, create a showcase of the form:
 
 | Payment type | Date         | 	Tips average amount | Passengers total |
 |:-------------|:-------------|:---------------------|:-----------------|
 | Cash         | 	2020-01-31  | 	999.99              | 	112             |
 
-###Input-data: taxi_data.csv:
 
+### Input-data: taxi_data.csv:
 1,2020-04-01 00:41:22,2020-04-01 01:01:53,1,1.20,1,N,41,24,2,5.5,0.5,0.5,0,0,0.3,6.8,0
 
 Learn more about the data source [*here*][1]
