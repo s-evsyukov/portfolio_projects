@@ -37,7 +37,7 @@ Learn more about the data source [*here*][1]
 6. [*Initiating Spark job*][5]
 
 [1]:https://registry.opendata.aws/nyc-tlc-trip-records-pds/
-[2]:https://github.com/Amboss/Docker_kafka_spark/blob/master/docker/docker-compose.yml
-[3]:https://github.com/Amboss/Docker_kafka_spark/blob/master/scripts/download.sh
-[4]:https://github.com/Amboss/Docker_kafka_spark/blob/master/scripts/data_producer.py
-[5]:https://github.com/Amboss/Docker_kafka_spark/blob/master/scripts/streaming_job.py
+[2]:https://github.com/Amboss/portfolio_projects/blob/master/docker_kafka_spark/docker/docker-compose.yml
+[3]:https://github.com/Amboss/portfolio_projects/blob/master/docker_kafka_spark/scripts/download.sh
+[4]:https://github.com/Amboss/portfolio_projects/blob/master/docker_kafka_spark/scripts/data_producer.py
+[5]:https://github.com/Amboss/portfolio_projects/blob/master/docker_kafka_spark/scripts/streaming_job.py
