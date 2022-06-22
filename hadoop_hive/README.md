@@ -22,26 +22,27 @@ Learn more about the data source [*here*][1]
 ### Progress of work:
 1. *Deploying a Hadoop cluster* using a `Yandex.Cloud` solution :
 2. *Creating a bucket* using a `S3` Yandex.Cloud solution.
-3. [*Downloading data*][3] (database) to created `s3` bucket using `distcp`.
-4. [*Creating & configure Database*][2] (database). Setting configuration `Hive - TEZ`. 
+3. [*Downloading data*][2] (database) to created `s3` bucket using `distcp`.
+4. [*Creating & configure Database*][3] (database). Setting configuration `Hive - TEZ`. 
    * "payment" according to the description of the data format. The storage format is parquet. 
    * The names of the id and name fields. Filling dimension table.
    * Using access utility - `Hive CLI`.
    * Tables created as external (`external`) to prevent data loss.
-5. [*Creating tables*][3] trips built on top of the existing data in the `csv` format.
+5. [*Creating tables*][4] trips built on top of the existing data in the `csv` format.
 trips are partitioned by the day of the start of the trip, the storage format is `parquet`.
 Thus, the search for the necessary data in the table will take the shortest possible time.
-6. [*Configure partitions, transformation and upload data*][4] to fact tables.
-7. [*Creating data showcase*][5] using a materialized view and `MAPJOIN`.
-8. [*Creating terminal scenario*][6] for showcase auto-creation.
-9. [*Rebuilding*][7] showcase.
+6. [*Configure partitions, transformation and upload data*][5] to fact tables.
+7. [*Creating data showcase*][6] using a materialized view and `MAPJOIN`.
+8. [*Creating terminal scenario*][7] for showcase auto-creation.
+9. [*Rebuilding*][8] showcase.
 
 
 
 [1]:https://registry.opendata.aws/nyc-tlc-trip-records-pds/
-[2]:https://github.com/Amboss/Hadoop_hive/blob/master/scrpts/table_dict.sql
-[3]:https://github.com/Amboss/Hadoop_hive/blob/master/scrpts/table_fact.sql
-[4]:https://github.com/Amboss/Hadoop_hive/blob/master/scrpts/insert_to_table_fact.sql
-[5]:https://github.com/Amboss/Hadoop_hive/blob/master/scrpts/view.sql
-[6]:https://github.com/Amboss/Hadoop_hive/blob/master/scrpts/run.sh
-[7]:https://github.com/Amboss/Hadoop_hive/blob/master/scrpts/rebuild.sh
+[2]:https://github.com/Amboss/portfolio_projects/blob/master/hadoop_hive/data/dawnload_s3_data.sh
+[3]:https://github.com/Amboss/portfolio_projects/blob/master/hadoop_hive/scrpts/table_dict.sql
+[4]:https://github.com/Amboss/portfolio_projects/blob/master/hadoop_hive/scrpts/table_fact.sql
+[5]:https://github.com/Amboss/Hadoop_hive/blob/master/scrpts/insert_to_table_fact.sql
+[6]:https://github.com/Amboss/portfolio_projects/blob/master/hadoop_hive/scrpts/view.sql
+[7]:https://github.com/Amboss/portfolio_projects/blob/master/hadoop_hive/scrpts/run.sh
+[8]:https://github.com/Amboss/portfolio_projects/blob/master/hadoop_hive/scrpts/rebuild.sh
