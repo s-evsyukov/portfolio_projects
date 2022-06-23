@@ -20,7 +20,7 @@
 
 #### DWH by "Kimball"
 
-![DWH by "Kimball"](img\Kimball.png "Kimball")
+![DWH by "Kimball"](https://github.com/Amboss/portfolio_projects/blob/master/data_warehouse/img/Kimball.png "Kimball")
 
 - The model is based on: "Car service shop"
 - Type: "Constellation",
@@ -52,7 +52,7 @@
 
 #### DWH by "Inmon"
 
-![DWH by "Inmon"](img\Inmon.png "Inmon")
+![DWH by "Inmon"](https://github.com/Amboss/portfolio_projects/blob/master/data_warehouse/img/Inmon.png "Inmon")
 
 - The model is based on: "Seaport management"
 - Type: "Constellation",
@@ -80,7 +80,7 @@ Transaction entities:
 
 #### DWH по "Data Volt 2",
 
-![DWH by "Data Volt2"](img\Data_volt2.png "Data Volt2")
+![DWH by "Data Volt2"](https://github.com/Amboss/portfolio_projects/blob/master/data_warehouse/img/Data_volt2.png "Data Volt2")
 
 - The model is based on: "Medical clinic management"
 - Type: "Constellation"
@@ -124,7 +124,7 @@ The essence of Combined Access "BRIDGE":
 
 #### DWH по "Anchor modeling"
 
-![DWH by "Anchor modeling"](img\Anchor_modeling.png "Anchor modeling")
+![DWH by "Anchor modeling"](https://github.com/Amboss/portfolio_projects/blob/master/data_warehouse/img/Anchor_modeling.png "Anchor modeling")
 
 - The model is based on: "Chartering a bus management"
 - Type: "Constellation"
