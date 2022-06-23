@@ -1,26 +1,20 @@
-
 import os
-from pathlib import Path
 
 from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql import functions as f
 from pyspark.sql.types import StructType, StructField, StringType, TimestampType, IntegerType, DoubleType
-
-
 from pyspark.sql.functions import round
-
-# MySql
 from typing import List
+from pathlib import Path
 
 
 MYSQL_HOST = 'rc1b-**************.mdb.yandexcloud.net'
 MYSQL_PORT = 3306
 MYSQL_DATABASE = 'test_db'
 MYSQL_TABLE = 'test_table'
-MYSQL_USER = ********
-MYSQL_PASSWORD = ********
+MYSQL_USER = '********'
+MYSQL_PASSWORD = '********'
 
-# поля справочника
 dim_columns = ['id', 'name']
 
 vendor_rows = [
@@ -49,7 +43,7 @@ payment_rows = [
 
 trips_schema = StructType([
     StructField('VendorID', StringType(), True),
-    StructField('tpep_pickup_datetime', TimestampType(), True),     #
+    StructField('tpep_pickup_datetime', TimestampType(), True),
     StructField('tpep_dropoff_datetime', TimestampType(), True),
     StructField('passenger_count', IntegerType(), True),
     StructField('trip_distance', DoubleType(), True),
@@ -57,11 +51,11 @@ trips_schema = StructType([
     StructField('store_and_fwd_flag', StringType(), True),
     StructField('PULocationID', IntegerType(), True),
     StructField('DOLocationID', IntegerType(), True),
-    StructField('payment_type', IntegerType(), True),               #
-    StructField('fare_amount', DoubleType(), True),                 #
+    StructField('payment_type', IntegerType(), True),
+    StructField('fare_amount', DoubleType(), True),
     StructField('extra', DoubleType(), True),
     StructField('mta_tax', DoubleType(), True),
-    StructField('tip_amount', DoubleType(), True),                  #
+    StructField('tip_amount', DoubleType(), True),
     StructField('tolls_amount', DoubleType(), True),
     StructField('improvement_surcharge', DoubleType(), True),
     StructField('total_amount', DoubleType(), True),
@@ -70,13 +64,18 @@ trips_schema = StructType([
 
 
 def agg_calc(spark: SparkSession) -> DataFrame:
+    """
+    Initiating DataFrame
+
+    :param spark: current spark session
+    :return: DataFrame
+    """
     data_path = os.path.join(Path(__name__).parent, "I:/taxi", 'yellow_tripdata_2020-01.csv')
 
     trip_fact = spark.read \
         .option("header", "true") \
         .schema(trips_schema) \
         .csv(data_path)
-
 
     datamart = trip_fact \
         .where(trip_fact['VendorID'].isNotNull()) \
@@ -91,14 +90,7 @@ def agg_calc(spark: SparkSession) -> DataFrame:
                 f.col('avg_tips_cost'),
                 f.col('avg_trip_km_cost')) \
         .orderBy(f.col('dt').desc(), f.col('payment_type').asc())
-
     return datamart
-
-
-def create_dict(spark: SparkSession, header: List[str], data: list):
-    """создание словаря"""
-    df = spark.createDataFrame(data=data, schema=header)
-    return df
 
 
 def save_to_mysql(host: str, port: int, db_name: str, username: str,
@@ -112,13 +104,11 @@ def save_to_mysql(host: str, port: int, db_name: str, username: str,
     }
 
     df.write.jdbc(
-        url=f'jdbc:mysql://{host}:{port}/{db_name}',
-        table=table_name,
-        properties=props)
+        url=f'jdbc:mysql://{host}:{port}/{db_name}', table=table_name, properties=props)
 
 
 def main(spark: SparkSession):
-    payment_dim = create_dict(spark, dim_columns, payment_rows)
+    payment_dim = spark.createDataFrame(data=payment_rows, schema=dim_columns)
 
     datamart = agg_calc(spark).cache()
     datamart = datamart.filter(f.month('dt').isin(1))

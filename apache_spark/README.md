@@ -1,4 +1,4 @@
-# Apace Spark
+# Apache Spark
 
 ### Skills and tools
 `Yandex.Cloud` `S3` `HDFS` `PySpark` `CLI` `Shell` `Hadoop Cluster Administration`                                            
