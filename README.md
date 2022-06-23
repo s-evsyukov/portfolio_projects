@@ -12,7 +12,7 @@
 | [*Docker Kafka Spark*][4]     | Creating a data showcase using the `Docker-compose`, `Kafka`, `GreenPlum` and `Spark` infrastructure                                                | `Yandex.Cloud` `Kafka` `SparkStreaming` `Docker-compose` `ZooKeeper` `GreenPlum`                                            |
 | [*Apache Airflow*][5]         | Auto-collecting of currency exchange rate data from the website with `Apache Kafka` and uploading to `GreenPlum`                                    | `VK.Cloud` `Airflow` `GreenPlum` `Jinja` `macros` `ETL` `parsing` `bash` `IDE` `CI/CD`                                      |
 | [*Google Kubernetes*][6]      | Deploying a `Kubernetes` cluster with the installation of components to run the custom script and tracking the result using `Spring History Server` | `VK.Cloud` `terminal` `Ubuntu` `Kubectl` `Kubernetes` `Helm` `DOCKER` `S3` `Spark` `Spark Operator`  `Spark History Server` |
-| [*Apache PySparkML*][7]       | Creating a bot identifier using `PySparkML` among user sessions with two tasks - to train the best data model and to apply it.                      | `PySpark` `SparkML` `SparkSession` `Pipeline` `mlflow`                                                                      |
+| [*Apache SparkML*][7]       | Creating a bot identifier using `PySparkML` among user sessions with two tasks - to train the best data model and to apply it.                      | `PySpark` `SparkML` `SparkSession` `Pipeline` `mlflow`                                                                      |
 
 
 [1]:https://github.com/Amboss/portfolio_projects/tree/master/hadoop_mapreduce
