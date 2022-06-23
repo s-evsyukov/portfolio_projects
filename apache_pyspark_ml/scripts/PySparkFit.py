@@ -19,7 +19,7 @@ determine the best model and save it for future use
 
 MODEL_PATH = 'spark_ml_model'
 LABEL_COL = 'is_bot'
-TRAIN_DATA = "session-stat.parquet"
+TRAIN_DATA = "/data/session-stat.parquet"
 FEATURES = ["duration", "item_info_events", "select_item_events",
             "make_order_events", "events_per_min", "platform_index", "user_type_index"]
 FEATURES_COL = "features"

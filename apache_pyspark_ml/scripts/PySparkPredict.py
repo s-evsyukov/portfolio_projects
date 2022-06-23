@@ -1,35 +1,26 @@
 import argparse
-import os
+from pyspark.ml import PipelineModel
 from pyspark.sql import SparkSession
-import mlflow
 
 
-LOGGED_MODEL = 'runs:/*****'
-
-# os.environ['MLFLOW_S3_ENDPOINT_URL'] = 'https://storage.yandexcloud.net'
-# os.environ['AWS_ACCESS_KEY_ID'] = '*****'
-# os.environ['AWS_SECRET_ACCESS_KEY'] = '******'
+MODEL_PATH = '/data/spark_ml_model'
 
 
-def process(spark, data_path, result):
+def process(data_path, model_path, result_path):
     """
-    Основной процесс задачи.
+    Application of the saved model.
 
-    :param spark: SparkSession
-    :param data_path: путь до датасета
-    :param result: путь сохранения результата
+    :param data_path: path to the file with the data to which the prediction should be made.
+    ::param model_path: path to the saved model (From the task PySparkMLFit.py ).
+    :param result_path: the path to save the prediction results ([session_id, prediction]).date
     """
-    mlflow.set_tracking_uri("https://mlflow.lab.karpov.courses")
-    model = mlflow.spark.load_model(LOGGED_MODEL)
-
-    # read parquet
+    spark = _spark_session()
     df = spark.read.parquet(data_path)
-
-    # transform
-    prediction = model.transform(df)
-
-    # saving result
-    prediction.write.save(result)
+    loaded_model = PipelineModel.load(model_path)
+    prediction = loaded_model.transform(df)
+    prediction.select('session_id', 'prediction').write.mode("overwrite").parquet(result_path)
+    spark.stop()
+    print("Done.")
 
 
 def main(data, result):
@@ -39,17 +30,19 @@ def main(data, result):
 
 def _spark_session() -> SparkSession:
     """
-    Создание SparkSession.
+    Creating SparkSession.
 
     :return: SparkSession
     """
-    return SparkSession.builder.appName('test_1').getOrCreate()
+    return SparkSession.builder.appName('Predict').getOrCreate()
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', type=str, default='data.parquet', help='Please set datasets path.')
-    parser.add_argument('--result', type=str, default='result', help='Please set result path.')
+    parser.add_argument(
+        '--data', type=str, default='data.parquet', help='Please set datasets path.')
+    parser.add_argument(
+        '--result', type=str, default='result', help='Please set result path.')
     args = parser.parse_args()
     data = args.data
     result = args.result
