@@ -4,3 +4,24 @@
 [submodule "apache__airflow"]
 	path = apache__airflow
 	url = https://github.com/Amboss/apache_airflow
+[submodule "hadoop_mapreduce"]
+	path = hadoop_mapreduce
+	url = https://github.com/Amboss/hadoop_mapreduce
+[submodule "hadoop_hive"]
+	path = hadoop_hive
+	url = https://github.com/Amboss/hadoop_hive
+[submodule "apache_spark"]
+	path = apache_spark
+	url = https://github.com/Amboss/apache_spark
+[submodule "docker_kafka_spark"]
+	path = docker_kafka_spark
+	url = https://github.com/Amboss/docker_kafka_spark
+[submodule "google_kubernates"]
+	path = google_kubernates
+	url = https://github.com/Amboss/google_kubernetes
+[submodule "apache_spark_ml"]
+	path = apache_spark_ml
+	url = https://github.com/Amboss/apache_pyspark_ml
+[submodule "data_warehouse"]
+	path = data_warehouse
+	url = https://github.com/Amboss/data_warehouse
