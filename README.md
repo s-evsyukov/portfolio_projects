@@ -22,7 +22,7 @@
 [3]:https://github.com/Amboss/portfolio_projects/tree/master/hadoop_hive
 [4]:https://github.com/Amboss/portfolio_projects/tree/master/apache_spark
 [5]:https://github.com/Amboss/portfolio_projects/tree/master/docker_kafka_spark
-[6]:https://github.com/Amboss/portfolio_projects/tree/master/apache_airflow
+[6]:https://github.com/Amboss/apache_airflow
 [7]:https://github.com/Amboss/portfolio_projects/tree/master/google_kubernetes
 [8]:https://github.com/Amboss/portfolio_projects/tree/master/apache_pyspark_ml
 [9]:https://github.com/Amboss/docker_postgres_python
