@@ -1,0 +1,3 @@
+[submodule "Docker_Postgres_Pscopg2"]
+	path = Docker_Postgres_Pscopg2
+	url = https://github.com/Amboss/docker_postgres_python
