@@ -14,6 +14,7 @@
 | [*Apache Airflow*][6]         | Auto-collecting of currency exchange rate data from the website with `Apache Kafka` and uploading to `GreenPlum`                                    | `VK.Cloud` `Airflow` `GreenPlum` `Jinja` `macros` `ETL` `parsing` `bash` `IDE` `CI/CD`                                         |
 | [*Google Kubernetes*][7]      | Deploying a `Kubernetes` cluster with the installation of components to run the custom script and tracking the result using `Spring History Server` | `VK.Cloud` `terminal` `Ubuntu` `Kubectl` `Kubernetes` `Helm` `DOCKER` `S3` `Spark` `Spark Operator`  `Spark History Server`    |
 | [*Apache SparkML*][8]         | Creating a bot identifier using `PySpark` among user sessions with two tasks - to train the best data model and to apply it.                        | `PySpark` `SparkML` `SparkSession` `Pipeline`                                                                                  |
+| [*Docker PostgreSQL*][8]      | Initiate `Docker-compose` container with `PostgreSQL`                        | `Docker` `Docker-compose` `PostgreSQL` `Adminer` `Python` `Pscorpg2`                                                                                  |
 
 
 [1]:https://github.com/Amboss/portfolio_projects/tree/master/data_warehouse
@@ -24,3 +25,4 @@
 [6]:https://github.com/Amboss/portfolio_projects/tree/master/apache_airflow
 [7]:https://github.com/Amboss/portfolio_projects/tree/master/google_kubernetes
 [8]:https://github.com/Amboss/portfolio_projects/tree/master/apache_pyspark_ml
+[9]:https://github.com/Amboss/docker_postgres_python
