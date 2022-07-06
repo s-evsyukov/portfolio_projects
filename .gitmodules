@@ -25,3 +25,6 @@
 [submodule "data_warehouse"]
 	path = data_warehouse
 	url = https://github.com/Amboss/data_warehouse
+[submodule "Docker_Postgres_Debezium_Kafka"]
+	path = Docker_Postgres_Debezium_Kafka
+	url = https://github.com/Amboss/Postgres_Debezium_Kafka
