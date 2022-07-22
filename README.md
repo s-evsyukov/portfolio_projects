@@ -16,6 +16,8 @@
 | [*Apache SparkML*][8]                    | Creating a bot identifier using `PySpark` among user sessions with two tasks - to train the best data model and to apply it.                        | `PySpark` `SparkML` `SparkSession` `Pipeline`                                                                               |
 | [*Docker PostgreSQL*][9]                 | Initiating `PostgreSQL` container with `Docker-compose`                                                                                             | `Docker` `Docker-compose` `PostgreSQL` `Adminer` `Python` `Pscorpg2` `DockerHUB`                                           |
 | [*Docker Debezium Kafka PostgreSQL*][10] | Creating `Kafka` topics monitoring pipeline with `Debezium connect`                                                                                 | `Docker` `Docker-compose` `PostgreSQL` `Debezium` `Kafka`                                                                   |
+| [*PySpark Poetry*][11]                   | Creating `PySpark` project with `Poetry` DMS                                                                                                        | `PySpark` `Poetry` `PyTest` `Quinn` `Wheel`                                                                                 |
+
 
 
 [1]:https://github.com/Amboss/data_warehouse
@@ -28,3 +30,5 @@
 [8]:https://github.com/Amboss/apache_pyspark_ml
 [9]:https://github.com/Amboss/docker_postgres_python
 [10]:https://github.com/Amboss/Postgres_Debezium_Kafka
+[11]:https://github.com/Amboss/Spark_Poetry
+
