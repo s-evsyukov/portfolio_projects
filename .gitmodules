@@ -28,3 +28,6 @@
 [submodule "Docker_Postgres_Debezium_Kafka"]
 	path = Docker_Postgres_Debezium_Kafka
 	url = https://github.com/Amboss/Postgres_Debezium_Kafka
+[submodule "Spark_Poetry"]
+	path = Spark_Poetry
+	url = https://github.com/Amboss/Spark_Poetry
