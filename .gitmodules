@@ -31,3 +31,6 @@
 [submodule "Spark_Poetry"]
 	path = Spark_Poetry
 	url = https://github.com/Amboss/Spark_Poetry
+[submodule "Docker_Spark_cluster"]
+	path = Docker_Spark_cluster
+	url = https://github.com/Amboss/Docker_Spark_cluster
