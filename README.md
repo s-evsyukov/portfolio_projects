@@ -14,10 +14,10 @@
 | [*Apache Airflow*][6]                    | Auto-collecting of currency exchange rate data from the website with `Apache Kafka` and uploading to `GreenPlum`                                    | `VK.Cloud` `Airflow` `GreenPlum` `Jinja` `macros` `ETL` `parsing` `bash` `IDE` `CI/CD`                                      |
 | [*Google Kubernetes*][7]                 | Deploying a `Kubernetes` cluster with the installation of components to run the custom script and tracking the result using `Spring History Server` | `VK.Cloud` `terminal` `Ubuntu` `Kubectl` `Kubernetes` `Helm` `DOCKER` `S3` `Spark` `Spark Operator`  `Spark History Server` |
 | [*Apache SparkML*][8]                    | Creating a bot identifier using `PySpark` among user sessions with two tasks - to train the best data model and to apply it.                        | `PySpark` `SparkML` `SparkSession` `Pipeline`                                                                               |
-| [*Docker PostgreSQL*][9]                 | Initiating `PostgreSQL` container with `Docker-compose`                                                                                             | `Docker` `Docker-compose` `PostgreSQL` `Adminer` `Python` `Pscorpg2` `DockerHUB`                                           |
+| [*Docker PostgreSQL*][9]                 | Initiating `PostgreSQL` container with `Docker-compose`                                                                                             | `Docker` `Docker-compose` `PostgreSQL` `Adminer` `Python` `Pscorpg2` `DockerHUB`                                            |
 | [*Docker Debezium Kafka PostgreSQL*][10] | Creating `Kafka` topics monitoring pipeline with `Debezium connect`                                                                                 | `Docker` `Docker-compose` `PostgreSQL` `Debezium` `Kafka`                                                                   |
 | [*PySpark Poetry*][11]                   | Creating `PySpark` project with `Poetry` DMS                                                                                                        | `PySpark` `Poetry` `PyTest` `Quinn` `Wheel`                                                                                 |
-
+| [*Docker Spark cluster*][12]             | Creating standalone `Spark` cluster on local PC                                                                                                     | `Docker` `Docker-compose` `PySpark` `AWS CLI` `PostgreSQL` `Terminal` `Bash`                                                |
 
 
 [1]:https://github.com/Amboss/data_warehouse
@@ -31,4 +31,4 @@
 [9]:https://github.com/Amboss/docker_postgres_python
 [10]:https://github.com/Amboss/Postgres_Debezium_Kafka
 [11]:https://github.com/Amboss/Spark_Poetry
-
+[12]:https://github.com/Amboss/Docker_Spark_cluster
