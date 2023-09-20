@@ -22,8 +22,7 @@ default_args = {
 }
 
 def download_rates():
-    # BASE_URL = "https://gist.githubusercontent.com/marclamberti/f45f872dea4dfd3eaa015a4a1af4b39b/raw/"
-    BASE_URL = "/ portfolio_projects/Docker_AF_hive_spark/Forex_data/"
+    BASE_URL = "https://github.com/s-evsyukov/portfolio_projects/tree/master/Docker_AF_hive_spark/Forex_data"
     ENDPOINTS = {
         'USD': 'api_forex_exchange_usd.json',
         'EUR': 'api_forex_exchange_eur.json'
